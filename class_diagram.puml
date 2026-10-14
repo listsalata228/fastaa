@@ -1,0 +1,26 @@
+@startuml
+
+class Seq {
+    - __sequence
+    - __header
+
+    + __init__(sequence, header)
+    + sequence
+    + header
+    + alphabet
+    + __len__()
+    + __str__()
+}
+
+class FastaReader {
+    - __filename
+
+    + __init__(filename)
+    + is_fasta()
+    + read()
+    + __iter__()
+}
+
+FastaReader --> Seq
+
+@enduml

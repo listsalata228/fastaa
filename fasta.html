@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FASTA OOP documentation</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.5; }
+code, pre { background: #f2f2f2; padding: 4px; }
+</style>
+</head>
+<body>
+<h1>FASTA OOP documentation</h1>
+
+<h2>Seq</h2>
+<p>Класс одной последовательности. Хранит заголовок и последовательность.</p>
+<p>Основные свойства: <code>sequence</code>, <code>header</code>, <code>alphabet</code>.</p>
+<p>Специальный метод <code>__len__</code> возвращает длину последовательности.
+<code>__str__</code> выводит объект в формате FASTA.</p>
+
+<h2>FastaReader</h2>
+<p>Класс для чтения FASTA-файлов.</p>
+<p>Метод <code>is_fasta()</code> проверяет файл, а <code>read()</code> является генератором
+и возвращает объекты <code>Seq</code> по одному.</p>
+</body>
+</html>
